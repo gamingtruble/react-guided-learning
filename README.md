@@ -5,15 +5,15 @@
 
 ## Quick start
 * You will learn
-* [ ] How to create and nest components
+* [x] How to create and nest components
   * react components are
     * React apps building blocks
     * a piece of the UI that has its own logic and appearance
     * JavaScript functions that return markup
     * able to be as small as a button, or as large as an entire page
   * components:
-    * [ ] make: function MyButton()
-    * [ ] make: function MyApp() and nest MyButton into it
+    * [x] make: function MyButton()
+    * [x] make: function MyApp() and nest MyButton into it
 
   * JSX
     * the markup syntax for MyButton and MyApp is called JSX

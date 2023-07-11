@@ -5,14 +5,14 @@
 
 ## Quick start
 * You will learn
-* [x] [How to create and nest components](*how-to-create-and-nest-components)
-* [x] [How to add markup and styles](*how-to-add-markup-and-styles)
-* [x] [How to display data](*how-to-display-data)
+* [x] [How to create and nest components](#how-to-create-and-nest-components)
+* [x] [How to add markup and styles](#how-to-add-markup-and-styles)
+* [x] [How to display data](#how-to-display-data)
 * [ ] How to render conditions and lists
 * [ ] How to respond to events and update the screen
 * [ ] How to share data between components
 
-* How to create and nest components
+### How to create and nest components
   * react components are
     * React apps building blocks
     * a piece of the UI that has its own logic and appearance
@@ -22,7 +22,7 @@
     * [x] make: function MyButton()
     * [x] make: function MyApp() and nest MyButton into it
 
-* How to add markup and styles
+### How to add markup and styles
   * [x] writing markup
     * the markup syntax for MyButton and MyApp is called JSX
       * JSX is stricter than HTML
@@ -42,7 +42,7 @@
     * when using a build tool or a framework
       * consult its documentation to learn how to add a CSS file to it
 
-* How to display data
+### How to display data
   * JSX let you put markup into JS
   * curly braces let you "escape back" into JS
     * this way you can embed some variable from your code and display it to the user
@@ -53,7 +53,7 @@
         * `return (<img className="avatar" src={user.imageUrl}/>);`
           * now the `user.imageUrl` value will be passed as the `src` attribute value
 
-* How to render conditions and lists
-* How to respond to events and update the screen
-* How to share data between components
+### How to render conditions and lists
+### How to respond to events and update the screen
+### How to share data between components
 

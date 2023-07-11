@@ -5,6 +5,8 @@
 
 ## Quick start
 * You will learn
+* add index
+
 * [x] How to create and nest components
   * react components are
     * React apps building blocks
@@ -15,8 +17,8 @@
     * [x] make: function MyButton()
     * [x] make: function MyApp() and nest MyButton into it
 
-* [ ] How to add markup and styles
-  * [ ] writing markup
+* [x] How to add markup and styles
+  * [x] writing markup
     * the markup syntax for MyButton and MyApp is called JSX
       * JSX is stricter than HTML
         * you have to close tags like `<br />`
@@ -24,7 +26,7 @@
         * you have to wrap them into a shared parent, like a `<div>...</div>` or an empty `<>...</>` wrapper
       * if you have a lot of HTML to port to JSX, you can use an online converter
 
-  * [ ] adding styles
+  * [x] adding styles
     * to specify css class in react, you use `className`
       * it works the same way as HTML `class` attribute
         * `<img className="avatar"/>`
@@ -35,7 +37,7 @@
     * when using a build tool or a framework
       * consult its documentation to learn how to add a CSS file to it
 
-* [ ] How to display data
+* [x] How to display data
   * JSX let you put markup into JS
   * curly braces let you "escape back" into JS
     * this way you can embed some variable from your code and display it to the user

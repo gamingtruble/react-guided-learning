@@ -8,9 +8,9 @@
 * [x] [How to create and nest components](#how-to-create-and-nest-components)
 * [x] [How to add markup and styles](#how-to-add-markup-and-styles)
 * [x] [How to display data](#how-to-display-data)
-* [ ] How to render conditions and lists
-* [ ] How to respond to events and update the screen
-* [ ] How to share data between components
+* [ ] [How to render conditions and lists](#how-to-render-conditions-and-lists)
+* [ ] [How to respond to events and update the screen](#how-to-respond-to-events-and-update-the-screen)
+* [ ] [How to share data between components](#how-to-share-data-between-components)
 
 ### How to create and nest components
   * react components are

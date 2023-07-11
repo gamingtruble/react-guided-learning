@@ -36,6 +36,16 @@
       * consult its documentation to learn how to add a CSS file to it
 
 * [ ] How to display data
+  * JSX let you put markup into JS
+  * curly braces let you "escape back" into JS
+    * this way you can embed some variable from your code and display it to the user
+      * this will display `user.name`:
+        * `return(<h1>{user.name}</h1>);`
+    * the curly braces also allow you to assign values to attributes
+      * in this case the `src` attribute reads the JS `user.imageUrl` variable value
+        * `return (<img className="avatar" src={user.imageUrl}/>);`
+          * now the `user.imageUrl` value will be passed as the `src` attribute value
+
 * [ ] How to render conditions and lists
 * [ ] How to respond to events and update the screen
 * [ ] How to share data between components

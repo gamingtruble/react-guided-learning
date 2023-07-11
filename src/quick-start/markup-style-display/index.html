@@ -40,6 +40,11 @@ https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/exp
                 className="avatar"
                 src={user.image}
                 alt={'photo of ' + user.name}
+                /*
+                    here the "style{{}}" is not a special syntax
+                    it's a regular "{}" object inside the "style={}" JSX curly braces
+                    they "style" attribute can be used when the styles depend on JS variables
+                */
                 style={{
                     width: user.imageSize,
                     height: user.imageSize

@@ -54,6 +54,26 @@
           * now the `user.imageUrl` value will be passed as the `src` attribute value
 
 ### How to render conditions and lists
+* [ ] conditions
+  * in React there's no special syntax for writing conditions
+    * you can use the same techniques as you would in JS with `if`, `else` etc. to conditionally include JSX
+      * `let content;`
+      * `if (isLoggedIn) {content = <AdminPanel />;}`
+      * `else { content = <LoginForm />;}`
+      * `return ( <div> {content} </div>);`
+    * you can also use conditional `?` operator if you prefer more compact code
+    * unlike if, it works inside JSX
+      * `<div>`
+      * `{isLoggedIn ? (`
+      * `<AdminPanel />`
+      * `) : (`
+      * `<LoginForm />`
+      * `)}`
+      * `</div>`
+    * when no `else` branch is needed, a shorter  logical `and` (`&&`) syntax can be used
+      * `<div> {isLoggedIn && <AdminPanel />} </div>`
+    * all of these approaches also work for conditionally specifying attributes
+
 ### How to respond to events and update the screen
 ### How to share data between components
 

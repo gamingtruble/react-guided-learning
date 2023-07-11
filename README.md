@@ -5,9 +5,9 @@
 
 ## Quick start
 * You will learn
-* [x] [How to create and nest components](* how-to-create-and-nest-components)
-* [x] [How to add markup and styles](* how-to-add-markup-and-styles)
-* [x] [How to display data](* how-to-display-data)
+* [x] [How to create and nest components](*how-to-create-and-nest-components)
+* [x] [How to add markup and styles](*how-to-add-markup-and-styles)
+* [x] [How to display data](*how-to-display-data)
 * [ ] How to render conditions and lists
 * [ ] How to respond to events and update the screen
 * [ ] How to share data between components

@@ -73,6 +73,29 @@
     * when no `else` branch is needed, a shorter  logical `and` (`&&`) syntax can be used
       * `<div> {isLoggedIn && <AdminPanel />} </div>`
     * all of these approaches also work for conditionally specifying attributes
+* [ ] rendering lists
+  * list rendering rely on JS features like `for loop` and the `array map()` function
+    * about the `array map()` function:
+    * it creates a new array populated with the results of operations done on every element in the array it's used on
+      * my own words, original source on this [link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+  * example
+    * here's an array of products
+      * `const product[{title: 'Cabbage', id: 1}, {title: 'Garlic', id: 2}, {title: 'Apple', id: 3}];`
+    * inside a jsx component, use the `map()` function to transform the array of products into an array of `<li>` tag items
+      * `const listItems = products.map(`
+      * `product => <li key={product.id}>`
+      * `{product.title}`
+      * `</li>`
+      * `);`
+      * `return (<ul>{listItems}</ul>);`
+    * each item in a list should have a unique identifier
+      * each of the li elements has a key attribute as their unique identifier
+      * the identifier should usually be coming from the data that's being working on
+        * things such as a database ID
+      * through React keys can be used to see what happened if any changes is done to it later
+        * examples for changes could be insertions, deletions or reordering of items
+  * 
+
 
 ### How to respond to events and update the screen
 ### How to share data between components

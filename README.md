@@ -30,7 +30,6 @@
         * your component also can’t return multiple JSX tags
         * you have to wrap them into a shared parent, like a `<div>...</div>` or an empty `<>...</>` wrapper
       * if you have a lot of HTML to port to JSX, you can use an online converter
-
   * [x] adding styles
     * to specify css class in react, you use `className`
       * it works the same way as HTML `class` attribute
@@ -73,7 +72,7 @@
     * when no `else` branch is needed, a shorter  logical `and` (`&&`) syntax can be used
       * `<div> {isLoggedIn && <AdminPanel />} </div>`
     * all of these approaches also work for conditionally specifying attributes
-* [ ] rendering lists
+* [x] rendering lists
   * list rendering rely on JS features like `for loop` and the `array map()` function
     * about the `array map()` function:
     * it creates a new array populated with the results of operations done on every element in the array it's used on
@@ -94,8 +93,6 @@
         * things such as a database ID
       * through React keys can be used to see what happened if any changes is done to it later
         * examples for changes could be insertions, deletions or reordering of items
-  * 
-
 
 ### How to respond to events and update the screen
 ### How to share data between components

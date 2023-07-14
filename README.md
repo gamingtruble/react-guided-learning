@@ -95,5 +95,15 @@
         * examples for changes could be insertions, deletions or reordering of items
 
 ### How to respond to events and update the screen
+* [ ] responding to events
+  * events can be responded to by declaring an event handler functions inside the jsx components
+    * `function MyButton() {`
+    * `function handleClick(){alert('You clicked me!');}`
+    * `ruturn (<button onClick={handleClick}>Click me</button>);`
+    * `}`
+  * the `handleClick()` function does not get called at `onClick={handleClick}`
+    * notice that the `()` parenthesis are not included at `onClick={handleClick}`
+      * this way it's only passed down, and React will call the event handler when the button is clicked
+
 ### How to share data between components
 

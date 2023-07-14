@@ -104,6 +104,30 @@
   * the `handleClick()` function does not get called at `onClick={handleClick}`
     * notice that the `()` parenthesis are not included at `onClick={handleClick}`
       * this way it's only passed down, and React will call the event handler when the button is clicked
+* [ ] Updating the screen
+* showing  and updating some information on the screen can be useful
+  * an example could be showing how many times a button have been clicked
+  * this can be done by adding a state to a component
+    * to do this
+      * import `useState` from react:
+        * `ipmort {useState} from 'react';`
+      * then declare a state variable inside a component
+        * `function MyButton(){const[count, setCount] = useState(0);`
+    * `useState` add two things
+      * the current state `count`
+      * the function that update it `setCount`
+      * `count` start at "0" because "0" was passed to `useState` at `useState(0);`
+    * full `MyButton` component example:
+      * `function MyButton(){`
+      * `const[count, setCount] = useState(0);`
+      * `function handleClick(){setCount(count + 1);`
+      * `)`
+      * `return(`
+      * `<button onClick={}>Clicked {count} times</button>`
+      * `);`
+      * `}`
+    * React will call the component function again
+      * this time `count` will be "1", then it will be "2" and so on
+    * if you render the same component multiple times, each will get its own state
 
 ### How to share data between components
-

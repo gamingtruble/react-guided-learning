@@ -10,6 +10,7 @@
 * [x] [How to display data](#how-to-display-data)
 * [ ] [How to render conditions and lists](#how-to-render-conditions-and-lists)
 * [x] [How to respond to events and update the screen](#how-to-respond-to-events-and-update-the-screen)
+* [Using Hooks](#using-hooks)
 * [ ] [How to share data between components](#how-to-share-data-between-components)
 
 ### How to create and nest components
@@ -129,5 +130,14 @@
       * React will call the component function again
         * this time `count` will be "1", then it will be "2" and so on
       * if you render the same component multiple times, each will get its own state
+
+### Using Hooks
+* functions starting with `use` are called "Hooks"
+* `useState` is a built-in Hook provided by React
+  * Hooks are more restrictive than other functions
+  * they can only be called at the top of components or other Hooks
+  * to use `useState` in a condition or loop, extract a new component and put it there
+* it's also possible to make your own Hooks by combining existing ones
+  * other built in Hooks can be found [here](https://react.dev/reference/react)
 
 ### How to share data between components

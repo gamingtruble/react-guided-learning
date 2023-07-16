@@ -27,26 +27,33 @@ https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/exp
     import { createRoot } from 'react-dom/client';
     import { useState } from 'react';
 
-    function MyButton() {
+    function MyButton({count, onClick}) {
+        return(
+            <button onClick={onClick}>
+                Clicked {count} times
+            </button>
+        );
+    }
+
+    function MyApp() {
         const [count, setCount] = useState(0);
 
-        function handleClick() {
+        function handleClick(){
             setCount(count + 1);
         }
 
-        return (
-            <button onClick={handleClick}>
-                Clicked {count} times
-            </button>
+        return(
+            <div>
+                <MyButton count={count} onClick={handleClick} />
+                <MyButton count={count} onClick={handleClick} />
+            </div>
         );
     }
 
     const root = createRoot(document.getElementById('root'));
     root.render(
         <StrictMode>
-            <h1>Counters that update separately</h1>
-            <MyButton />
-            <MyButton />
+            <MyApp />
         </StrictMode>
     );
 </script>

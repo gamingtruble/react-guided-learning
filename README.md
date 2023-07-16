@@ -11,7 +11,7 @@
 * [ ] [How to render conditions and lists](#how-to-render-conditions-and-lists)
 * [x] [How to respond to events and update the screen](#how-to-respond-to-events-and-update-the-screen)
 * [Using Hooks](#using-hooks)
-* [ ] [How to share data between components](#how-to-share-data-between-components)
+* [x] [How to share data between components](#how-to-share-data-between-components)
 
 ### How to create and nest components
   * react components are
@@ -141,10 +141,10 @@
   * other built in Hooks can be found [here](https://react.dev/reference/react)
 
 ### How to share data between components
-* [ ] sharing between components
+* [x] sharing between components
   * the way the two buttons worked from [how to render conditions and lists](#how-to-render-conditions-and-lists) were by having one `count` state for each instance of the button component
   * to make the two component instances share data:
-    * [ ] move the state from the individual component instances "upwards" to the closest component containing them all
+    * [x] move the state from the individual component instances "upwards" to the closest component containing them all
       * jsx syntax:
         * `export default function MyApp() {`
         * `const [count, setCount] = useState(0);`
@@ -154,7 +154,7 @@
         * `<MyButton />`
         * `</div>);
         * `}`
-    * [ ] then "pass the state down" from that component to each of the buttons
+    * [x] then "pass the state down" from that component to each of the buttons
       * `export default function MyApp() {`
       * `const [count, setCount] = useState(0);`
       * `function handleClick(){setCount(count + 1);}`
@@ -166,7 +166,7 @@
       * `}`
         * the information getting passed down like this, is called "props"
           * now the component holding both instances of `<MyButton />` contain the `count` state and the `handleClick` event handler
-    * [ ] Change `<MyButton />` components to read the props that's getting passed down
+    * [x] Change `<MyButton />` components to read the props that's getting passed down
       * `function MyButton({ count, onClick }){`
       * `return(<button onClick={onClick}>`
       * `Clicked {count} times`

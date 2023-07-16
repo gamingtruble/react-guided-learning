@@ -141,3 +141,41 @@
   * other built in Hooks can be found [here](https://react.dev/reference/react)
 
 ### How to share data between components
+* [ ] sharing between components
+  * the way the two buttons worked from [how to render conditions and lists](#how-to-render-conditions-and-lists) were by having one `count` state for each instance of the button component
+  * to make the two component instances share data:
+    * [ ] move the state from the individual component instances "upwards" to the closest component containing them all
+      * jsx syntax:
+        * `export default function MyApp() {`
+        * `const [count, setCount] = useState(0);`
+        * `function handleClick(){setCount(count + 1);}`
+        * `return(<div>`
+        * `<MyButton />`
+        * `<MyButton />`
+        * `</div>);
+        * `}`
+    * [ ] then "pass the state down" from that component to each of the buttons
+      * `export default function MyApp() {`
+      * `const [count, setCount] = useState(0);`
+      * `function handleClick(){setCount(count + 1);}`
+      * `return(<div>`
+      * `<h1>Counters that update together</h1>`
+      * `<MyButton count={count} onClick={handleClick} />
+      * `<MyButton count={count} onClick={handleClick} />`
+      * `</div>);
+      * `}`
+        * the information getting passed down like this, is called "props"
+          * now the component holding both instances of `<MyButton />` contain the `count` state and the `handleClick` event handler
+    * [ ] Change `<MyButton />` components to read the props that's getting passed down
+      * `function MyButton({ count, onClick }){`
+      * `return(<button onClick={onClick}>`
+      * `Clicked {count} times`
+      * `</button>`
+      * `);`
+      * `}`
+        * when the button is pressed, the `onClick` handler fires
+          * each buttons `onClick` prop was set to the `handleClick` function inside `MyApp` so the code inside it runs
+            * the code calls `setCount` adding to `count` value
+            * the new `count` value is passed as prop to each of the buttons
+              * this is called "lifting state up"
+                * by moving a state up, it got shared between components

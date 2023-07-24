@@ -13,6 +13,9 @@
 * [Using Hooks](#using-hooks)
 * [x] [How to share data between components](#how-to-share-data-between-components)
 
+## parcel
+* [ ] [using npm to install package.json with parcel](#using-npm-to-download-package-json-and-install-parcel)
+
 ### How to create and nest components
   * react components are
     * React apps building blocks
@@ -179,3 +182,12 @@
             * the new `count` value is passed as prop to each of the buttons
               * this is called "lifting state up"
                 * by moving a state up, it got shared between components
+
+
+
+## using npm to download package json and install parcel
+* [x] install [npm](https://www.npmjs.com/package/npm) (node package manager)
+* download package.json and install parcel
+  * [ ] make a directory (a folder) for the `jsx` files and `HTML` that you want to run with parcel
+  * [ ] open a terminal (from `IDE` or `OS`), go to the directory in terminal and type `npm init -y` then press enter
+  * [ ] in same directory type `npm i -D parcel` into terminal

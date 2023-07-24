@@ -14,7 +14,7 @@
 * [x] [How to share data between components](#how-to-share-data-between-components)
 
 ## parcel
-* [ ] [using npm to install package.json with parcel](#using-npm-to-download-package-json-and-install-parcel)
+* [x] [using npm to install package.json with parcel](#using-npm-to-download-package-json-and-install-parcel)
 
 ### How to create and nest components
   * react components are
@@ -188,6 +188,6 @@
 ## using npm to download package json and install parcel
 * [x] install [npm](https://www.npmjs.com/package/npm) (node package manager)
 * download package.json and install parcel
-  * [ ] make a directory (a folder) for the `jsx` files and `HTML` that you want to run with parcel
-  * [ ] open a terminal (from `IDE` or `OS`), go to the directory in terminal and type `npm init -y` then press enter
-  * [ ] in same directory type `npm i -D parcel` into terminal
+  * [x] make a directory (a folder) for the `jsx` files and `HTML` that you want to run with parcel
+  * [x] open a terminal (from `IDE` or `OS`), go to the directory in terminal and type `npm init -y` then press enter
+  * [x] in same directory type `npm i -D parcel` into terminal

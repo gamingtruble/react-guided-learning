@@ -17,6 +17,10 @@
 * [x] [using npm to install package.json with parcel](#using-npm-to-download-package-json-and-install-parcel)
 * [x] [making a basic HTML site with an associated jsx file](#making-a-basic-html-site-with-an-associated-jsx-file)
 
+## Quick start using jsx, with Parcel
+* [ ] [Tic-Tac-Toe](#tic-tac-toe)
+
+
 
 ### How to create and nest components
   * react components are
@@ -231,3 +235,11 @@
       * optionally, some software, like webstorm, will let you run it directly from package.json when you're looking at the file
         * in webstorm, this will also show a stop button on the left side of the terminal
     * the script make parcel start a sort of server, where the React is hosted (under the hood, this use something called babel, that is also more directly used for testing)
+
+
+### Tic-Tac-Toe
+* The Tic-Tac-Toe project here, follow [this](https://react.dev/learn/tutorial-tic-tac-toe) part of the quick start guide
+  * [ ] setup for the project
+  * [ ] overview
+  * [ ] completing game
+  * [ ] adding time travel

@@ -207,9 +207,13 @@
     * start making it usable by importing React and ReactDom to index.jsx, by typing:
       * `import * as React from "react";`
       * `import * as ReactDOM from "react-dom";`
-        * short version for why you need both:
-          * ReactDOM used to be part of React, it is no longer that for reasons I haven't bothered to completely understand, ReactDOM is the glue between React and the DOM. In practice that mostly means the line `ReactDOM.render()`
-            * [my source*](https://stackoverflow.com/questions/34114350/react-vs-reactdom)
+    * ReactDOM needs to be installed, so inside the same folder open the terminal and type:
+      * `npm i -P `
+        * `-P` is for production, `-D` is for development
+          * `-D` is usually for things that will only be used while developing, while `-P` is used for things that either is used in the end product, or in both end product and development (so pretty much everything else)
+    * short version for why you need both React and ReactDOM:
+      * ReactDOM used to be part of React, it is no longer that for reasons I haven't bothered to completely understand, ReactDOM is the glue between React and the DOM. In practice that mostly means the line `ReactDOM.render()`
+        * [my source*](https://stackoverflow.com/questions/34114350/react-vs-reactdom)
   * [ ] make Parcel able to run 
     * to render out React to the `HTML` file, write this into the `jsx` file
       * `ReactDOM.render(<h1>Hello World</h1>, document.getElementById("app"));`

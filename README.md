@@ -15,7 +15,7 @@
 
 ## parcel
 * [x] [using npm to install package.json with parcel](#using-npm-to-download-package-json-and-install-parcel)
-* [ ] [making a basic HTML site with an associated jsx file](#making-a-basic-html-site-with-an-associated-jsx-file)
+* [x] [making a basic HTML site with an associated jsx file](#making-a-basic-html-site-with-an-associated-jsx-file)
 
 
 ### How to create and nest components

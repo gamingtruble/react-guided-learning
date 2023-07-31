@@ -207,8 +207,9 @@
     * start making it usable by importing React and ReactDom to index.jsx, by typing:
       * `import * as React from "react";`
       * `import * as ReactDOM from "react-dom";`
-    * ReactDOM needs to be installed, so inside the same folder open the terminal and type:
-      * `npm i -P `
+    * React and ReactDOM needs to be installed (sometimes the editing program, IDE or text-editor, will give you the option to do this automatically through them), so inside the same folder open the terminal and type:
+      * `npm i -P react react-dom`
+        * npm can download multiple dependencies if you separate them with a normal space
         * `-P` is for production, `-D` is for development
           * `-D` is usually for things that will only be used while developing, while `-P` is used for things that either is used in the end product, or in both end product and development (so pretty much everything else)
     * short version for why you need both React and ReactDOM:
@@ -219,5 +220,12 @@
       * `ReactDOM.render(<h1>Hello World</h1>, document.getElementById("app"));`
     * then, in package.json, add this in the curly brackets after "scripts":
       * `"dev": "parcel index.html"`
+  * [ ] run React through Parcel
+    * in terminal, still in the same directory, type
+      * `npm run dev`
+    * this will run the dev script inside package.json, and show a link leading to it (click ctrl+c while having the terminal selected to stop it)
+      * optionally, some software, like webstorm, will let you run it directly from package.json when you're looking at the file
+        * in webstorm, this will also show a stop button on the left side of the terminal
+    * the script make parcel start a sort of server, where the React is hosted (under the hood, this use something called babel, that is more directly used for testing)
 
 

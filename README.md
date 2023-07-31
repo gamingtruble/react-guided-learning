@@ -193,6 +193,7 @@
   * [x] make a directory (a folder) for the `jsx` files and `HTML` that you want to run with parcel
   * [x] open a terminal (from `IDE` or `OS`), go to the directory in terminal and type `npm init -y` then press enter
   * [x] in same directory type `npm i -D parcel` into terminal
+  * if you add or delete any dependencies directly from the package.json file, then run `npm install` in terminal in the same directory to apply changes
 
 ## making a basic HTML site with an associated jsx file
 * make a `jsx` and `HTML` file in the same directory as the package.json file
@@ -206,7 +207,7 @@
   * [x] make a new file in the same directory, name it "index.jsx"
     * start making it usable by importing React and ReactDom to index.jsx, by typing:
       * `import * as React from "react";`
-      * `import * as ReactDOM from "react-dom";`
+      * `import { createRoot } from "react-dom";`
     * React and ReactDOM needs to be installed (sometimes the editing program, IDE or text-editor, will give you the option to do this automatically through them), so inside the same folder open the terminal and type:
       * `npm i -P react react-dom`
         * npm can download multiple dependencies if you separate them with a normal space
@@ -217,7 +218,9 @@
         * [my source*](https://stackoverflow.com/questions/34114350/react-vs-reactdom)
   * [x] make Parcel able to run 
     * to render out React to the `HTML` file, write this into the `jsx` file
-      * `ReactDOM.render(<h1>Hello World</h1>, document.getElementById("app"));`
+      * `const container = document.getElementById("app");`
+      * `const root = createRoot(container);`
+      * `root.render(<h1>Hello World</h1>);`
     * then, in package.json, add this in the curly brackets after "scripts":
       * `"dev": "parcel index.html"`
   * [x] run React through Parcel

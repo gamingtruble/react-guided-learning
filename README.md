@@ -15,6 +15,8 @@
 
 ## parcel
 * [x] [using npm to install package.json with parcel](#using-npm-to-download-package-json-and-install-parcel)
+* [ ] [making a basic HTML site with an associated jsx file](#making-a-basic-html-site-with-an-associated-jsx-file)
+
 
 ### How to create and nest components
   * react components are
@@ -41,7 +43,7 @@
     * inside css file
       * `.avatar { border-radius: 50%; }`
     * React does not prescribe how to add CSS files
-      * in the simplest case, add a `<link>` tag to the HTML
+      * in the simplest case, add a `<link>` tag to the `HTML`
     * when using a build tool or a framework
       * consult its documentation to learn how to add a CSS file to it
 
@@ -191,3 +193,27 @@
   * [x] make a directory (a folder) for the `jsx` files and `HTML` that you want to run with parcel
   * [x] open a terminal (from `IDE` or `OS`), go to the directory in terminal and type `npm init -y` then press enter
   * [x] in same directory type `npm i -D parcel` into terminal
+
+## making a basic HTML site with an associated jsx file
+* make a `jsx` and `HTML` file in the same directory as the package.json file
+  * [ ] start by making a basic html file (in webstorm and similar applications, you might find an option to autogenerate this)
+    * call the html "index.html"
+    * inside body, add a tag `<div id="app"></div>`
+      * this is a tag that React components will live inside
+    * now, make a connection to a file index.jsx that don't exist yet
+      * to do this, by adding a script tag under body, and setting the src and type like this:
+        * `<script src="index.jsx" type="module"></script>`
+  * [ ] make a new file in the same directory, name it "index.jsx"
+    * start making it usable by importing React and ReactDom to index.jsx, by typing:
+      * `import * as React from "react";`
+      * `import * as ReactDOM from "react-dom";`
+        * short version for why you need both:
+          * ReactDOM used to be part of React, it is no longer that for reasons I haven't bothered to completely understand, ReactDOM is the glue between React and the DOM. In practice that mostly means the line `ReactDOM.render()`
+            * [my source*](https://stackoverflow.com/questions/34114350/react-vs-reactdom)
+  * [ ] make Parcel able to run 
+    * to render out React to the `HTML` file, write this into the `jsx` file
+      * `ReactDOM.render(<h1>Hello World</h1>, document.getElementById("app"));`
+    * then, in package.json, add this in the curly brackets after "scripts":
+      * `"dev": "parcel index.html"`
+
+

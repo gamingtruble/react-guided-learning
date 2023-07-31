@@ -214,8 +214,9 @@
         * `-P` is for production, `-D` is for development
           * `-D` is usually for things that will only be used while developing, while `-P` is used for things that either is used in the end product, or in both end product and development (so pretty much everything else)
     * short version for why you need both React and ReactDOM:
-      * ReactDOM used to be part of React, it is no longer that for reasons I haven't bothered to completely understand, ReactDOM is the glue between React and the DOM. In practice that mostly means the line `ReactDOM.render()`
+      * ReactDOM used to be part of React, it is no longer that for reasons I haven't bothered to completely understand, ReactDOM is the glue between React and the DOM. In practice that mostly means the line `root.render()`
         * [my source*](https://stackoverflow.com/questions/34114350/react-vs-reactdom)
+        * [the reason we use root.render, and not ReactDOM.render](https://react.dev/blog/2022/03/08/react-18-upgrade-guide#updates-to-client-rendering-apis)
   * [x] make Parcel able to run 
     * to render out React to the `HTML` file, write this into the `jsx` file
       * `const container = document.getElementById("app");`
@@ -230,5 +231,3 @@
       * optionally, some software, like webstorm, will let you run it directly from package.json when you're looking at the file
         * in webstorm, this will also show a stop button on the left side of the terminal
     * the script make parcel start a sort of server, where the React is hosted (under the hood, this use something called babel, that is also more directly used for testing)
-
-

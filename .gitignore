@@ -1,2 +1,4 @@
 .idea
 /src/quick-start/using-parcel/node_modules/
+/src/quick-start/using-parcel/.parcel-cache/
+/src/quick-start/using-parcel/dist/

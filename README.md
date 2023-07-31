@@ -196,14 +196,14 @@
 
 ## making a basic HTML site with an associated jsx file
 * make a `jsx` and `HTML` file in the same directory as the package.json file
-  * [ ] start by making a basic html file (in webstorm and similar applications, you might find an option to autogenerate this)
+  * [x] start by making a basic html file (in webstorm and similar applications, you might find an option to autogenerate this)
     * call the html "index.html"
     * inside body, add a tag `<div id="app"></div>`
       * this is a tag that React components will live inside
     * now, make a connection to a file index.jsx that don't exist yet
       * to do this, by adding a script tag under body, and setting the src and type like this:
         * `<script src="index.jsx" type="module"></script>`
-  * [ ] make a new file in the same directory, name it "index.jsx"
+  * [x] make a new file in the same directory, name it "index.jsx"
     * start making it usable by importing React and ReactDom to index.jsx, by typing:
       * `import * as React from "react";`
       * `import * as ReactDOM from "react-dom";`
@@ -215,17 +215,17 @@
     * short version for why you need both React and ReactDOM:
       * ReactDOM used to be part of React, it is no longer that for reasons I haven't bothered to completely understand, ReactDOM is the glue between React and the DOM. In practice that mostly means the line `ReactDOM.render()`
         * [my source*](https://stackoverflow.com/questions/34114350/react-vs-reactdom)
-  * [ ] make Parcel able to run 
+  * [x] make Parcel able to run 
     * to render out React to the `HTML` file, write this into the `jsx` file
       * `ReactDOM.render(<h1>Hello World</h1>, document.getElementById("app"));`
     * then, in package.json, add this in the curly brackets after "scripts":
       * `"dev": "parcel index.html"`
-  * [ ] run React through Parcel
+  * [x] run React through Parcel
     * in terminal, still in the same directory, type
       * `npm run dev`
     * this will run the dev script inside package.json, and show a link leading to it (click ctrl+c while having the terminal selected to stop it)
       * optionally, some software, like webstorm, will let you run it directly from package.json when you're looking at the file
         * in webstorm, this will also show a stop button on the left side of the terminal
-    * the script make parcel start a sort of server, where the React is hosted (under the hood, this use something called babel, that is more directly used for testing)
+    * the script make parcel start a sort of server, where the React is hosted (under the hood, this use something called babel, that is also more directly used for testing)
 
 

@@ -12,6 +12,7 @@
 * [x] [How to respond to events and update the screen](#how-to-respond-to-events-and-update-the-screen)
 * [Using Hooks](#using-hooks)
 * [x] [How to share data between components](#how-to-share-data-between-components)
+* NB: none of the project files following this part of readme use "export default function", instead they use root.render
 
 ## parcel
 * [x] [using npm to install package.json with parcel](#using-npm-to-download-package-json-and-install-parcel)
@@ -120,7 +121,7 @@
     * this can be done by adding a state to a component
       * to do this
         * import `useState` from react:
-          * `ipmort {useState} from 'react';`
+          * `import {useState} from 'react';`
         * then declare a state variable inside a component
           * `function MyButton(){const[count, setCount] = useState(0);`
       * `useState` add two things

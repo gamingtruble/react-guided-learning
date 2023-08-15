@@ -212,7 +212,7 @@
   * [x] make a new file in the same directory, name it "index.jsx"
     * start making it usable by importing React and ReactDom to index.jsx, by typing:
       * `import * as React from "react";`
-      * `import { createRoot } from "react-dom";`
+      * `import { createRoot } from "react-dom/client";`
     * React and ReactDOM needs to be installed (sometimes the editing program, IDE or text-editor, will give you the option to do this automatically through them), so inside the same folder open the terminal and type:
       * `npm i -P react react-dom`
         * npm can download multiple dependencies if you separate them with a normal space
@@ -241,6 +241,17 @@
 ### Tic-Tac-Toe
 * The Tic-Tac-Toe project here, follow [this](https://react.dev/learn/tutorial-tic-tac-toe) part of the quick start guide
   * [ ] setup for the project
+    * [install Parcel](#using-npm-to-download-package-json-and-install-parcel)
+    * make a basic `html` file, and `jsx` file
+      * inside `html` file
+        * add a container tag (can use a div for this)
+          * `<div id="app"></div>`
+      * inside `jsx` file
+        * add basic root render, returning a button containing an x
+          * `import * as React from 'react';`
+          * `import { createRoot } from 'react-dom/client';`
+          * `const root = createRoot(document.getElementById('root'));`
+          * `root.render(<button className="square">X</button>;)`
   * [ ] overview
   * [ ] completing game
   * [ ] adding time travel
